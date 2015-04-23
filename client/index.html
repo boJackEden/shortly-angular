@@ -7,8 +7,33 @@
   </head>
   <body>
     <h1>Shortly</h1>
-
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+    <nav  class='navigation'>
+    <ul>
+      <li>
+        <div ng-controller="LinksController">
+            <a ng-click="changeView('links')">
+                Links
+            </a>
+        </div>
+      </li>
+      <li>
+        <div ng-controller="ShortenController">
+            <a ng-click="changeView('shorten')">
+                Shorten
+            </a>
+        </div>
+      </li>
+      <li>
+        <div ng-controller="AuthController">
+            <a ng-click="changeView('signin')">
+                Sign in
+            </a>
+        </div>
+      </li>
+    </ul>
+    </nav>
+
     <div ng-view></div>
 
     <script src="lib/angular/angular.js"></script>

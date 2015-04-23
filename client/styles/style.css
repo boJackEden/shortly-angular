@@ -32,6 +32,7 @@ h1 {
 }
 
 .navigation li a {
+  font-size: 1.2em;
   width: 100px;
   height: 20px;
   line-height: 20px;

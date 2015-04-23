@@ -1,3 +1,8 @@
-<div id='container'>
-  <!-- Your html here -->
+<div id='container' ng-controller="LinksController">
+  <h1>You're on the links view</h1><!-- Your html here -->
+   <ul>
+    <li ng-repeat="link in linksArr">
+    {{ link }}
+    </li>
+  </ul>
 </div>

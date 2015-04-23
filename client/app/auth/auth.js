@@ -27,4 +27,7 @@ angular.module('shortly.auth', [])
         console.error(error);
       });
   };
+  $scope.changeView = function(view){
+    $location.path(view); // path not hash
+  };
 });
